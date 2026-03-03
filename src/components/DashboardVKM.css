@@ -1,0 +1,142 @@
+/* ====== LAYOUT ====== */
+.vkm-page {
+  background: #f5f7fb;
+  min-height: 100vh;
+  padding: 24px;
+  font-family: "Segoe UI", Tahoma, sans-serif;
+}
+
+/* ====== HEADER ====== */
+.vkm-header {
+  background: linear-gradient(90deg, #0f172a, #1e293b);
+  color: white;
+  padding: 18px 28px;
+  border-radius: 14px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 28px;
+}
+
+.vkm-header h1 {
+  margin: 0;
+  font-size: 22px;
+  font-weight: 700;
+}
+
+.vkm-user {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.vkm-badge-admin {
+  background: #22c55e;
+  color: white;
+  padding: 4px 10px;
+  border-radius: 999px;
+  font-size: 12px;
+  font-weight: 600;
+}
+
+.vkm-logout {
+  background: #ef4444;
+  border: none;
+  color: white;
+  padding: 6px 14px;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+/* ====== BUTTON BACK ====== */
+.vkm-back {
+  margin: 20px 0;
+}
+
+.vkm-back button {
+  background: #334155;
+  color: white;
+  border: none;
+  padding: 10px 18px;
+  border-radius: 10px;
+  cursor: pointer;
+  font-weight: 600;
+}
+
+/* ====== CARD ====== */
+.vkm-card {
+  background: white;
+  border-radius: 16px;
+  padding: 24px;
+  margin-bottom: 26px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+}
+
+.vkm-card h2 {
+  margin-top: 0;
+  font-size: 18px;
+}
+
+/* ====== IMPORT ====== */
+.vkm-import {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+
+.vkm-import button {
+  background: #2563eb;
+  color: white;
+  border: none;
+  padding: 8px 18px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: 600;
+}
+
+/* ====== SEARCH ====== */
+.vkm-search {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 14px;
+}
+
+.vkm-search input {
+  flex: 1;
+  padding: 10px 14px;
+  border-radius: 10px;
+  border: 1px solid #cbd5f5;
+}
+
+.vkm-search button {
+  background: #334155;
+  color: white;
+  border: none;
+  padding: 10px 18px;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+/* ====== TABLE ====== */
+.vkm-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.vkm-table th {
+  background: #f1f5f9;
+  text-align: left;
+  padding: 12px;
+}
+
+.vkm-table td {
+  padding: 12px;
+  border-top: 1px solid #e5e7eb;
+}
+
+.vkm-empty {
+  padding: 16px;
+  text-align: center;
+  color: #64748b;
+}
