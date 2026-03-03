@@ -54,8 +54,9 @@ export default function DashboardVKM() {
   const [query, setQuery] = useState("");
   const [results, setResults] = useState<VKMRecord[]>([]);
 
-  // IMPORT (opsional)
-  const ENABLE_IMPORT = String(import.meta.env.VITE_VKM_ENABLE_IMPORT || "").toLowerCase() === "true";
+  // IMPORT (opsional) — shfaqet vetëm me ?admin=true në URL
+  const isAdmin = new URLSearchParams(window.location.search).get("admin") === "true";
+  const ENABLE_IMPORT = isAdmin && String(import.meta.env.VITE_VKM_ENABLE_IMPORT || "").toLowerCase() === "true";
   const [file, setFile] = useState<File | null>(null);
   const [importing, setImporting] = useState(false);
 
