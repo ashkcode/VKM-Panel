@@ -226,8 +226,8 @@ export default function DashboardVKM() {
               textAlign: "center",
             }}
           >
-            LISTA EMËRORE E SUBJEKTEVE QË PREKEN NGA NDËRTIMET INFORMALE TË KUALIFIKUARA,
-            MASA DHE VLERA E SHPËRBLIMIT
+           Shkruani emrin tuaj për të verifikuar nëse jeni përfitues i parcelës ndërtimore
+            apo i kompensimit  sipas VKM-ve të miratuara në vite.
           </div>
 
           {/* TABELA */}
