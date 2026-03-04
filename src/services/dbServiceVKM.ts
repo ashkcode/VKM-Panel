@@ -3,6 +3,7 @@ import { db } from "../firebase";
 
 const COL = "vkm_records";
 
+<<<<<<< HEAD
 /* ================= NORMALIZE ================= */
 function normalize(v: any): string {
   if (!v) return "";
@@ -41,6 +42,8 @@ function buildSearchTokens(record: any): string[] {
   return Array.from(tokens);
 }
 
+=======
+>>>>>>> 2656b6b (Ndryshon text)
 /* ================= SHTO REKORD ================= */
 /*
   Çdo record ruhet me ID automatike nga Firestore.
@@ -49,7 +52,10 @@ function buildSearchTokens(record: any): string[] {
 export async function addVKMRecord(record: any) {
   await addDoc(collection(db, COL), {
     ...record,
+<<<<<<< HEAD
     searchTokens: buildSearchTokens(record),
+=======
+>>>>>>> 2656b6b (Ndryshon text)
     createdAt: new Date(),
   });
 }

@@ -54,9 +54,14 @@ export default function DashboardVKM() {
   const [query, setQuery] = useState("");
   const [results, setResults] = useState<VKMRecord[]>([]);
 
+<<<<<<< HEAD
   // IMPORT (opsional) — shfaqet vetëm me ?admin=true në URL
   const isAdmin = new URLSearchParams(window.location.search).get("admin") === "true";
   const ENABLE_IMPORT = isAdmin && String(import.meta.env.VITE_VKM_ENABLE_IMPORT || "").toLowerCase() === "true";
+=======
+  // IMPORT (opsional)
+  const ENABLE_IMPORT = String(import.meta.env.VITE_VKM_ENABLE_IMPORT || "").toLowerCase() === "true";
+>>>>>>> 2656b6b (Ndryshon text)
   const [file, setFile] = useState<File | null>(null);
   const [importing, setImporting] = useState(false);
 
@@ -226,8 +231,14 @@ export default function DashboardVKM() {
               textAlign: "center",
             }}
           >
+<<<<<<< HEAD
            Shkruani emrin tuaj për të verifikuar nëse jeni përfitues i parcelës ndërtimore
             apo i kompensimit  sipas VKM-ve të miratuara në vite.
+=======
+            
+           Shkruani emrin tuaj për të verifikuar nëse jeni përfitues i parcelës 
+           ndërtimore apo i kompensimit  sipas VKM-ve të miratuara në vite.
+>>>>>>> 2656b6b (Ndryshon text)
           </div>
 
           {/* TABELA */}
